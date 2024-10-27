@@ -1,5 +1,7 @@
 # The Story of Battlefield 2042
+
 ## Opening Words
+
 Welcome to the Battlefield 2042 summary. The method to tell a narrative in this game is unique for the franchise and can be difficult for some people to navigate. This summary aims to collect essential information from the Codex, web lore, playercards and more to tell the main story that is laid out for us. So in case you have put off learning the narrative for this game, have some knowledge, or basically want a reminder of the story so far…
 
 **Please do enjoy it.**
