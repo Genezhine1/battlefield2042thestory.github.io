@@ -1,1 +1,6 @@
-# battlefield2042thestory.github.io
+# Battlefield 2042 - The Story
+hello
+
+hi
+
+what
