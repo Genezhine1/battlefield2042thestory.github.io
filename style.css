@@ -1,11 +1,11 @@
 @font-face {
-    font-family: BF_Modernista; font-weight: 400; src: url('../BF_Modernista-Regular.ttf');
-    font-family: BF_Modernista; font-weight: 700; src: url('../BF_Modernista-Bold.ttf');
-    font-family: BF_Modernista_Solid; src: url('../BF_Modernista_Solid-Medium.ttf');
+    font-family: BF_Modernista; font-weight: 400; src: url('./BF_Modernista-Regular.ttf');
+    font-family: BF_Modernista; font-weight: 700; src: url('./BF_Modernista-Bold.ttf');
+    font-family: BF_Modernista_Solid; src: url('./BF_Modernista_Solid-Medium.ttf');
 
-    font-family: PURISTA; font-weight: 100; src: url("../PURISTA_THIN.TTF");
-    font-family: PURISTA; font-weight: 400; src: url("../PURISTA_SEMIBOLD.TTF");
-    font-family: PURISTA; font-weight: 700; src: url("../PURISTA_BOLD.TTF");
+    font-family: PURISTA; font-weight: 100; src: url("./PURISTA_THIN.TTF");
+    font-family: PURISTA; font-weight: 400; src: url("./PURISTA_SEMIBOLD.TTF");
+    font-family: PURISTA; font-weight: 700; src: url("./PURISTA_BOLD.TTF");
 }
 
 body {
