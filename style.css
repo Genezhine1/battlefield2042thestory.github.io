@@ -1,0 +1,54 @@
+@font-face {
+    font-family: BF_Modernista; font-weight: 400; src: url('BF_Modernista-Regular.ttf');
+    font-family: BF_Modernista; font-weight: 900; src: url('BF_Modernista-Bold.ttf');
+    font-family: BF_Modernista; font-weight: 700; src: url('BF_Modernista_Solid-Medium.ttf');
+}
+
+body {
+    background-image: url("https://live.staticflickr.com/65535/51439793001_19df398077_k.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.text {
+    font-size: 30px;
+    font-family: BF_Modernista;
+    font-weight: 700;
+}
+
+.content {
+    padding: 0px 10vw 0px 10vw;
+}
+
+.header {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    gap: 10px;
+}
+
+.header_button {
+    
+    display: inline-block;
+    outline: 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+    background: #FFD814;
+    border: 1px solid #FCD200;
+    font-size: 18px;
+    height: 31px;
+    padding: 0 11px;
+    text-align: center;
+    font-weight: 500;
+    color: #0F1111;
+    :hover {
+        box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+    }
+    
+}
+
+#Prologue {
+    background: #7c7c7c;
+    border-color: #7c7c7c;
+}
