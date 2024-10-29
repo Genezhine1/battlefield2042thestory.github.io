@@ -25,6 +25,7 @@ function openTab(evt, tabName) {
       'master': 'https://media.contentapi.ea.com/content/dam/battlefield/battlefield-2042/common/season-02/the-dark-market/bf-2042-page-bg-season-2-crawford-lore-xl.jpg.adapt.1920w.jpg',
       'escalation': 'https://media.contentapi.ea.com/content/dam/battlefield/battlefield-2042/common/season-03/the-war-machine/bf-2042-page-bg-season-3-zain-lore-xl.jpg.adapt.1920w.jpg',
       'eleven': 'https://media.contentapi.ea.com/content/dam/battlefield/battlefield-2042/common/season-04/buried-secrets/bf-2042-page-bg-season4-blasco-lore-xl.jpg.adapt.1920w.jpg',
+      'epilogue': 'https://media.contentapi.ea.com/content/dam/battlefield/battlefield-2042/common/newsletter-background-image.jpg.adapt.3000w.jpg',
   };
 
   const imageUrl = `url(${images[tabName]})`;
