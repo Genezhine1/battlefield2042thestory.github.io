@@ -2,52 +2,82 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" src="./script.js"></script>
+    <script src="./jquery.js"></script>
     <title>The Story of Battlefield 2042</title>
   </head>
 
   <body>
     <div class="page">
         <div class="header">
-            <button class="header_button text" id="Prologue">
+            <button class="header_button text" id="Prologue" onclick="openTab(event, 'prologue')">
                 THE PROLOGUE
             </button>
-            <button class="header_button text" id="Zero">
+            <button class="header_button text" id="Zero" onclick="openTab(event, 'zero')">
                 SEASON 1: ZERO HOUR
             </button>
-            <button class="header_button text" id="Master">
+            <button class="header_button text" id="Master" onclick="openTab(event, 'master')">
                 SEASON 2: MASTER OF ARMS
             </button>
-            <button class="header_button text" id="Escalation">
+            <button class="header_button text" id="Escalation" onclick="openTab(event, 'escalation')">
                 SEASON 3: ESCALATION
             </button>
-            <button class="header_button text" id="Eleven">
+            <button class="header_button text" id="Eleven" onclick="openTab(event, 'eleven')">
                 SEASON 4: ELEVENTH HOUR
             </button>
-            <button class="header_button text" id="Epilogue">
+            <button class="header_button text" id="Epilogue" onclick="openTab(event, 'epilogue')">
                 YEAR 1: THE EPILOGUE
             </button>
-            <button class="header_button text" id="Dawn">
+            <button class="header_button text" id="Dawn" onclick="openTab(event, 'dawn')">
                 SEASON 5: NEW DAWN
             </button>
-            <button class="header_button text" id="Dark">
+            <button class="header_button text" id="Dark" onclick="openTab(event, 'dark')">
                 SEASON 6: DARK CREATIONS
             </button>
-            <button class="header_button text" id="Turning">
+            <button class="header_button text" id="Turning" onclick="openTab(event, 'turning')">
                 SEASON 7: TURNING POINT
             </button>
-            <button class="header_button text" id="Continue">
+            <button class="header_button text" id="Continue" onclick="openTab(event, 'continue')">
                 YEAR 2: THE BATTLE CONTINUES
             </button>
+
         </div>
 
+        <script> 
+            $(function() {
+                $("#prologue").load("./pages/prologue.html"); 
+                $("#zero").load("./pages/zero.html"); 
+                $("#master").load("./pages/master.html"); 
+                $("#escalation").load("./pages/escalation.html"); 
+                $("#eleven").load("./pages/eleven.html");
+                $("#epilogue").load("./pages/epilogue.html");
+                $("#dawn").load("./pages/dawn.html");
+                $("#dark").load("./pages/dark.html");
+                $("#turning").load("./pages/turning.html");
+                $("#continue").load("./pages/continue.html");
+            });
+        </script>
+
         <div class="content">
-            <p class="text">
-                Welcome to the Battlefield 2042 summary. The method to tell a narrative in this game is unique for the franchise and can be difficult for some people to navigate. This summary aims to collect essential information from the Codex, web lore, playercards and more to tell the main story that is laid out for us. So in case you have put off learning the narrative for this game, have some knowledge, or basically want a reminder of the story so far…
-    
-                Please do enjoy it.
-            </p>
+            <div id="home" class="tabcontent text">
+                <p>Welcome to the Battlefield 2042 summary. The method to tell a narrative in this game is unique for the franchise and can be difficult for some people to navigate. This summary aims to collect essential information from the Codex, web lore, playercards and more to tell the main story that is laid out for us. So in case you have put off learning the narrative for this game, have some knowledge, or basically want a reminder of the story so far…</p>
+                <p><strong>Please do enjoy it.</strong></p>
+            </div>
+            <div id="prologue" class="tabcontent text"></div>
+            <div id="zero" class="tabcontent text"></div>
+            <div id="master" class="tabcontent text"></div>
+            <div id="escalation" class="tabcontent text"></div>
+            <div id="eleven" class="tabcontent text"></div>
+            <div id="epilogue" class="tabcontent text"></div>
+            <div id="dawn" class="tabcontent text"></div>
+            <div id="dark" class="tabcontent text"></div>
+            <div id="turning" class="tabcontent text"></div>
+            <div id="continue" class="tabcontent text"></div>
         </div>
+        <script>
+            document.getElementById('home').style.display = "block";
+        </script>
     </div>
   </body>
 </html>
