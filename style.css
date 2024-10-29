@@ -1,11 +1,11 @@
 @font-face {
-    font-family: BF_Modernista; font-weight: 400; src: url('./BF_Modernista-Regular.ttf');
-    font-family: BF_Modernista; font-weight: 700; src: url('./BF_Modernista-Bold.ttf');
-    font-family: BF_Modernista_Solid; src: url('./BF_Modernista_Solid-Medium.ttf');
+    font-family: BF_Modernista; font-weight: 400; src: url('./resources/BF_Modernista-Regular.ttf');
+    font-family: BF_Modernista; font-weight: 700; src: url('./resources/BF_Modernista-Bold.ttf');
+    font-family: BF_Modernista_Solid; src: url('./resources/BF_Modernista_Solid-Medium.ttf');
 
-    font-family: PURISTA; font-weight: 100; src: url("./PURISTA_THIN.TTF");
-    font-family: PURISTA; font-weight: 400; src: url("./PURISTA_SEMIBOLD.TTF");
-    font-family: PURISTA; font-weight: 700; src: url("./PURISTA_BOLD.TTF");
+    font-family: PURISTA; font-weight: 100; src: url("./resources/PURISTA_THIN.TTF");
+    font-family: PURISTA; font-weight: 400; src: url("./resources/PURISTA_LIGHT.TTF");
+    font-family: PURISTA; font-weight: 700; src: url("./resources/PURISTA_SEMIBOLD.TTF");
 }
 
 body {
@@ -19,12 +19,17 @@ body {
     font-size: 26px;
     font-family: PURISTA;
     font-weight: 400;
-    transition-duration: 0.8s;
+    transition-duration: 0.4s;
     color: aliceblue;
 }
 
 .content {
-    padding: 10vw 20vw 0px 20vw;
+    padding: 100px 20vw 0px 20vw;
+}
+
+.tabcontent {
+    display: none;
+    
 }
 
 .header {
@@ -33,6 +38,7 @@ body {
     max-width: 100vw;
     justify-content: center;
     gap: 15px;
+    padding: 15px;
 }
 
 .header_button {
@@ -40,63 +46,61 @@ body {
     display: inline-block;
     outline: 0;
     border-radius: 15px;
-    box-shadow: 0 0 0 0 rgba(0, 255, 234, 0.5);
-    background: #f700ff;
-    border: 0px solid rgb(255, 255, 255);
+    box-shadow: 0 0 4px 4px #24fcdc2d;
+    background: #f700ff00;
+    border: 5px solid #00000000;
     font-size: 28px;
-    height: fixed;
-    padding: 5px 5px;
+    padding: 10px 5px;
     text-align: center;
     transition-duration: 0.4s;
     cursor: pointer;
     font-family: BF_Modernista_Solid;
-    color: #131313;
+    color: #e4e4e4;
     
 }
 
-.header_button:hover{
-
-    background: #df2514;
-    border: 4px solid #df2514;
-
+.header_button:hover, .header_button.active {
+    border-color: #e4e4e4;
+    color: #000000;
+    border-color: #fff70000;
 }
 
-#Prologue {
-    background: #7c7c7c;
+#Prologue:hover, #Prologue.active {
+    background: #24fcdc;
 }
 
-#Zero {
+#Zero:hover, #Zero.active {
     background: #FFF500;
 }
 
-#Master {
-    background: #df2514;
+#Master:hover, #Master.active {
+    background: #E61400;
 }
 
-#Escalation {
+#Escalation:hover, #Escalation.active {
     background: #00E6FF;
 }
 
-#Eleven {
+#Eleven:hover, #Eleven.active {
     background: #6DFF8F;
 }
 
-#Epilogue {
-    background: #7c7c7c;
+#Epilogue:hover, #Epilogue.active {
+    background: #24fcdc;
 }
 
-#Dawn {
+#Dawn:hover {
     background: #FF6432;
 }
 
-#Dark {
+#Dark:hover {
     background: #647dff;
 }
 
-#Turning {
+#Turning:hover {
     background: #f0b469;
 }
 
-#Continue {
-    background: #7c7c7c;
+#Continue:hover {
+    background: #24fcdc;
 }
