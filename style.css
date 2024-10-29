@@ -1,11 +1,10 @@
 @font-face {
-    font-family: BF_Modernista; font-weight: 400; src: url('/resources/BF_Modernista-Regular.ttf');
-    font-family: BF_Modernista; font-weight: 700; src: url('/resources/BF_Modernista-Bold.ttf');
-    font-family: BF_Modernista_Solid; src: url('/resources/BF_Modernista_Solid-Medium.ttf');
+    font-family: 'PURISTA'; src: url('./resources/purista_light-webfont.woff2') format('woff2');
+    font-family: 'BFM'; src: url('./resources/bf_modernista-regular-webfont.woff2') format('woff2');
+}
 
-    font-family: PURISTA; font-weight: 100; src: url("/resources/PURISTA_THIN.TTF");
-    font-family: PURISTA; font-weight: 400; src: url("/resources/PURISTA_LIGHT.TTF");
-    font-family: PURISTA; font-weight: 700; src: url("/resources/PURISTA_SEMIBOLD.TTF");
+@font-face {
+    font-family: 'BFMS'; src: url('./resources/bf_modernista_solid-medium-webfont.woff2') format('woff2');
 }
 
 body {
@@ -17,8 +16,7 @@ body {
 
 .text {
     font-size: 26px;
-    font-family: PURISTA;
-    font-weight: 400;
+    font-family: 'PURISTA';
     transition-duration: 0.4s;
     color: aliceblue;
 }
@@ -54,7 +52,7 @@ body {
     text-align: center;
     transition-duration: 0.4s;
     cursor: pointer;
-    font-family: BF_Modernista_Solid;
+    font-family: 'BFMS';
     color: #e4e4e4;
     
 }
