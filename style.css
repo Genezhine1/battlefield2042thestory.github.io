@@ -1,11 +1,11 @@
 @font-face {
-    font-family: BF_Modernista; font-weight: 400; src: url('./resources/BF_Modernista-Regular.ttf');
-    font-family: BF_Modernista; font-weight: 700; src: url('./resources/BF_Modernista-Bold.ttf');
-    font-family: BF_Modernista_Solid; src: url('./resources/BF_Modernista_Solid-Medium.ttf');
+    font-family: BF_Modernista; font-weight: 400; src: url('/resources/BF_Modernista-Regular.ttf');
+    font-family: BF_Modernista; font-weight: 700; src: url('/resources/BF_Modernista-Bold.ttf');
+    font-family: BF_Modernista_Solid; src: url('/resources/BF_Modernista_Solid-Medium.ttf');
 
-    font-family: PURISTA; font-weight: 100; src: url("./resources/PURISTA_THIN.TTF");
-    font-family: PURISTA; font-weight: 400; src: url("./resources/PURISTA_LIGHT.TTF");
-    font-family: PURISTA; font-weight: 700; src: url("./resources/PURISTA_SEMIBOLD.TTF");
+    font-family: PURISTA; font-weight: 100; src: url("/resources/PURISTA_THIN.TTF");
+    font-family: PURISTA; font-weight: 400; src: url("/resources/PURISTA_LIGHT.TTF");
+    font-family: PURISTA; font-weight: 700; src: url("/resources/PURISTA_SEMIBOLD.TTF");
 }
 
 body {
@@ -89,18 +89,18 @@ body {
     background: #24fcdc;
 }
 
-#Dawn:hover {
+#Dawn:hover, #Dawn.active {
     background: #FF6432;
 }
 
-#Dark:hover {
+#Dark:hover, #Dark.active {
     background: #647dff;
 }
 
-#Turning:hover {
+#Turning:hover, #Turning.active {
     background: #f0b469;
 }
 
-#Continue:hover {
+#Continue:hover, #Continue.active {
     background: #24fcdc;
 }
