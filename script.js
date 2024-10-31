@@ -20,6 +20,7 @@ function openTab(evt, tabName) {
   evt.currentTarget.className += " active";
 
   const images = {
+      'home': 'https://media.contentapi.ea.com/content/dam/battlefield/battlefield-2042/common/newsletter-background-image.jpg.adapt.3000w.jpg',
       'prologue': 'https://media.contentapi.ea.com/content/dam/battlefield/battlefield-2042/common/newsletter-background-image.jpg.adapt.3000w.jpg',
       'zero': 'https://media.contentapi.ea.com/content/dam/battlefield/battlefield-2042/common/season-01/steadfast-reckoning/bf-2042-page-bg-zero-hour-sr-xl.jpg.adapt.1920w.jpg',
       'master': 'https://media.contentapi.ea.com/content/dam/battlefield/battlefield-2042/common/season-02/the-dark-market/bf-2042-page-bg-season-2-crawford-lore-xl.jpg.adapt.1920w.jpg',
