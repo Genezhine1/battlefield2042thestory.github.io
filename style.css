@@ -14,6 +14,49 @@ body {
     background-position: center;
 }
 
+.highlightHeaders {
+    color: #24fcdc;
+}
+
+.highlight {
+    display: inline-block;
+    color: #24fcdc;
+    position: relative;
+    cursor: pointer;
+}
+
+.highlight:hover {
+    font-weight: 700;
+    box-shadow: 0 0 20px 4px #000000;
+    color: #FFF517;
+}
+
+.highlight::after {
+    content: attr(data-tooltip);
+    display: none;
+    position: absolute;
+    top: 115%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000000;
+    box-shadow: 12px 12px 15px 6px #000000;
+    color: #FFF517;
+    font-weight: 400;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 3px solid #FFF517;
+    width: max-content;
+    max-width: 28vw;
+    cursor: pointer;
+    white-space: pre-wrap;
+    z-index: 1000;
+    margin: 0 auto;
+  }
+
+.highlight:hover::after {
+    display: block; /* Show the tooltip on hover */
+}
+
 .text {
     font-size: 18px;
     letter-spacing: 1px;
@@ -21,10 +64,6 @@ body {
     font-family: 'TTH';
     transition-duration: 0.4s;
     color: aliceblue;
-}
-
-.highlight {
-    color: #24fcdc;
 }
 
 .content {
