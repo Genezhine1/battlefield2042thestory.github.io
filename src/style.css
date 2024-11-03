@@ -20,18 +20,25 @@ body {
 
 .highlight {
     display: inline-block;
-    color: #24fcdc;
+    color: hsl(171, 97%, 80%);
     position: relative;
     cursor: pointer;
 }
 
-.highlight:hover {
+.highlightZero {
+    display: inline-block;
+    color: hsl(58, 100%, 90%);
+    position: relative;
+    cursor: pointer;
+}
+
+.highlight:hover, .highlightZero:hover {
     font-weight: 700;
     box-shadow: 0 0 20px 4px #000000;
     color: #FFF517;
 }
 
-.highlight::after {
+.highlight::after, .highlightZero::after {
     content: attr(data-tooltip);
     display: none;
     position: absolute;
@@ -53,7 +60,7 @@ body {
     margin: 0 auto;
   }
 
-.highlight:hover::after {
+.highlight:hover::after, .highlightZero:hover::after {
     display: block; /* Show the tooltip on hover */
 }
 
@@ -89,6 +96,7 @@ body {
     gap: 10px;
     padding: 20px;
     margin: 0 auto;
+    z-index: 1000;
 }
 
 .header_button {
@@ -123,6 +131,7 @@ body {
     gap: 10px;
     padding: 15px;
     margin: 0 auto;
+    z-index: 1000;
 
 }
 
