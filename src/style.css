@@ -20,32 +20,46 @@ body {
 
 .highlight {
     display: inline-block;
-    color: hsl(171, 97%, 80%);
+    color: #24FCDC;
     position: relative;
     cursor: pointer;
 }
 
 .highlightZero {
     display: inline-block;
-    color: hsl(58, 100%, 85%);
+    color: #FFF500;
     position: relative;
     cursor: pointer;
 }
 
 .highlightMaster {
     display: inline-block;
-    color: hsl(5, 100%, 80%);
+    color: #E61400;
     position: relative;
     cursor: pointer;
 }
 
-.highlight:hover, .highlightZero:hover, .highlightMaster:hover {
-    font-weight: 700;
-    box-shadow: 0 0 20px 4px #000000;
-    color: #FFF517;
+.highlightEscalation {
+    display: inline-block;
+    color: #00E6FF;
+    position: relative;
+    cursor: pointer;
 }
 
-.highlight::after, .highlightZero::after, .highlightMaster::after {
+.highlightEleven {
+    display: inline-block;
+    color: #6DFF8F;
+    position: relative;
+    cursor: pointer;
+}
+
+.highlight:hover, .highlightZero:hover, .highlightMaster:hover, .highlightEscalation:hover, .highlightEleven:hover {
+    font-weight: 700;
+    box-shadow: 0 0 20px 4px #000000;
+    
+}
+
+.highlight::after, .highlightZero::after, .highlightMaster::after, .highlightEscalation::after, .highlightEleven::after {
     content: attr(data-tooltip);
     display: none;
     position: absolute;
@@ -54,12 +68,12 @@ body {
     transform: translateX(-50%);
     background-color: #000000;
     box-shadow: 12px 12px 15px 6px #000000;
-    color: #FFF517;
+    
     font-weight: 400;
     font-size: 16px;
     padding: 10px 15px;
     border-radius: 10px;
-    border: 3px solid #FFF517;
+    border: 3px solid;
     width: max-content;
     max-width: 28vw;
     cursor: pointer;
@@ -68,7 +82,7 @@ body {
     margin: 0 auto;
   }
 
-.highlight:hover::after, .highlightZero:hover::after, .highlightMaster:hover::after {
+.highlight:hover::after, .highlightZero:hover::after, .highlightMaster:hover::after, .highlightEscalation:hover::after, .highlightEleven:hover::after {
     display: block; /* Show the tooltip on hover */
 }
 
