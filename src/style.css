@@ -67,13 +67,20 @@ body {
     cursor: pointer;
 }
 
-.highlight:hover, .highlightZero:hover, .highlightMaster:hover, .highlightEscalation:hover, .highlightEleven:hover, .highlightDawn:hover, .highlightEpilogue:hover {
+.highlightDark {
+    display: inline-block;
+    color: #647dff;
+    position: relative;
+    cursor: pointer;
+}
+
+.highlight:hover, .highlightZero:hover, .highlightMaster:hover, .highlightEscalation:hover, .highlightEleven:hover, .highlightDawn:hover, .highlightEpilogue:hover, .highlightDark:hover {
     font-weight: 700;
     box-shadow: 0 0 20px 4px #000000;
     
 }
 
-.highlight::after, .highlightZero::after, .highlightMaster::after, .highlightEscalation::after, .highlightEleven::after, .highlightDawn::after, .highlightEpilogue::after {
+.highlight::after, .highlightZero::after, .highlightMaster::after, .highlightEscalation::after, .highlightEleven::after, .highlightDawn::after, .highlightEpilogue::after, .highlightDark::after {
     content: attr(data-tooltip);
     display: none;
     position: absolute;
@@ -96,7 +103,7 @@ body {
     margin: 0 auto;
   }
 
-.highlight:hover::after, .highlightZero:hover::after, .highlightMaster:hover::after, .highlightEscalation:hover::after, .highlightEleven:hover::after, .highlightDawn:hover::after, .highlightEpilogue:hover::after {
+.highlight:hover::after, .highlightZero:hover::after, .highlightMaster:hover::after, .highlightEscalation:hover::after, .highlightEleven:hover::after, .highlightDawn:hover::after, .highlightEpilogue:hover::after, .highlightDark:hover::after {
     display: block; /* Show the tooltip on hover */
 }
 
