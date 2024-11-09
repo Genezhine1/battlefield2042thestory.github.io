@@ -81,13 +81,20 @@ body {
     cursor: pointer;
 }
 
-.highlight:hover, .highlightZero:hover, .highlightMaster:hover, .highlightEscalation:hover, .highlightEleven:hover, .highlightDawn:hover, .highlightEpilogue:hover, .highlightDark:hover, .highlightTurning:hover {
+.highlightContinue {
+    display: inline-block;
+    color: #daee1e;
+    position: relative;
+    cursor: pointer;
+}
+
+.highlight:hover, .highlightZero:hover, .highlightMaster:hover, .highlightEscalation:hover, .highlightEleven:hover, .highlightDawn:hover, .highlightEpilogue:hover, .highlightDark:hover, .highlightTurning:hover, .highlightContinue:hover {
     font-weight: 700;
     box-shadow: 0 0 20px 4px #000000;
     
 }
 
-.highlight::after, .highlightZero::after, .highlightMaster::after, .highlightEscalation::after, .highlightEleven::after, .highlightDawn::after, .highlightEpilogue::after, .highlightDark::after, .highlightTurning::after {
+.highlight::after, .highlightZero::after, .highlightMaster::after, .highlightEscalation::after, .highlightEleven::after, .highlightDawn::after, .highlightEpilogue::after, .highlightDark::after, .highlightTurning::after, .highlightContinue::after {
     content: attr(data-tooltip);
     display: none;
     position: absolute;
@@ -110,7 +117,7 @@ body {
     margin: 0 auto;
   }
 
-.highlight:hover::after, .highlightZero:hover::after, .highlightMaster:hover::after, .highlightEscalation:hover::after, .highlightEleven:hover::after, .highlightDawn:hover::after, .highlightEpilogue:hover::after, .highlightDark:hover::after, .highlightTurning:hover::after {
+.highlight:hover::after, .highlightZero:hover::after, .highlightMaster:hover::after, .highlightEscalation:hover::after, .highlightEleven:hover::after, .highlightDawn:hover::after, .highlightEpilogue:hover::after, .highlightDark:hover::after, .highlightTurning:hover::after, .highlightContinue:hover::after {
     display: block; /* Show the tooltip on hover */
 }
 
@@ -321,7 +328,7 @@ body {
     font-family: 'BFMS';
 }
 
-#year-2-the-battle-continues, #chapter-1-buried-secrets, #chapter-2-remote-dealings, #chapter-3-resistance, #chapter-4-rise-and-fall, #chapter-5-horrors-of-the-past {
+#year-2-the-battle-continues {
     color: #daee1e;
     font-family: 'BFMS';
 }
