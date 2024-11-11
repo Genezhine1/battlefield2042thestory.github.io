@@ -103,7 +103,6 @@ body {
     transform: translateX(-50%);
     background-color: #000000;
     box-shadow: 12px 12px 15px 6px #000000;
-    
     font-weight: 400;
     font-size: 16px;
     padding: 10px 15px;
@@ -122,7 +121,7 @@ body {
 }
 
 .text {
-    font-size: 18px;
+    font-size: 1rem;
     letter-spacing: 1px;
     word-spacing: 1px;
     font-family: 'TTH';
@@ -131,7 +130,8 @@ body {
 }
 
 .content {
-    padding: 40px 28vw 80px 28vw;
+    width: clamp(70vw, calc(60vw + 144px), 90vw);
+    margin: 0 auto;
 }
 
 .tabcontent {
@@ -164,7 +164,7 @@ body {
     box-shadow: 0 0 0 4px #ffffff28;
     background: #f700ff00;
     border: 5px solid #00000000;
-    font-size: 1vw;
+    font-size: 1rem;
     letter-spacing: 0;
     padding: 5px 5px;
     text-align: center;
@@ -183,7 +183,7 @@ body {
     box-shadow: 0 0 15px 5px #00000065;
     background-color: #000000;
     grid-template-columns: repeat(3, auto);
-    max-width: 65vw;
+    width: clamp(50vw, calc(35vw + 216px), 90vw);
     justify-content: space-between;
     gap: 10px;
     padding: 15px;
@@ -200,7 +200,7 @@ body {
     box-shadow: 0 0 0 4px #ffffff28;
     background: #f700ff00;
     border: 5px solid #00000000;
-    font-size: 1vw;
+    font-size: 1rem;
     letter-spacing: 0;
     padding: 2px 5px;
     text-align: center;

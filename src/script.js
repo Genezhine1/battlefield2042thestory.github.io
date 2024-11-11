@@ -1,23 +1,21 @@
-function openTab(evt, tabName) {
-  // Declare all variables
+function openTab(evt = undefined, tabName) {
   var i, tabcontent, tablinks;
 
-  // Get all elements with class="tabcontent" and hide them
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
     tabcontent[i].classList.remove("active");
   }
 
-  // Get all elements with class="tablinks" and remove the class "active"
   tablinks = document.getElementsByClassName("header_button");
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
 
-  // Show the current tab, and add an "active" class to the button that opened the tab
   document.getElementById(tabName).style.display = "block";
-  evt.currentTarget.className += " active";
+  if (tabName !== 'home') {
+    document.getElementById(tabName.charAt(0).toUpperCase() + tabName.slice(1)).className += " active";
+  }
 
   const images = {
       'home': 'https://media.contentapi.ea.com/content/dam/battlefield/battlefield-2042/common/newsletter-background-image.jpg.adapt.3000w.jpg',
@@ -33,8 +31,57 @@ function openTab(evt, tabName) {
       'continue': 'https://live.staticflickr.com/65535/54102120900_6e52e2ed86_k.jpg',
   };
 
+  const pagesIndices = {
+    'home': 0,
+    'prologue': 1,
+    'zero': 2,
+    'master': 3,
+    'escalation': 4,
+    'eleven': 5,
+    'epilogue': 6,
+    'dawn': 7,
+    'dark': 8,
+    'turning': 9,
+    'continue': 10
+  }
+
+  window.pageIndex = pagesIndices[tabName];
+
   const imageUrl = `url(${images[tabName]})`;
   if (imageUrl) {
       $('body').css('background-image', imageUrl);
   }
+
 }
+
+function navigate(evt, direction) {
+  const pageIndices = {
+    'home': 0,
+    'prologue': 1,
+    'zero': 2,
+    'master': 3,
+    'escalation': 4,
+    'eleven': 5,
+    'epilogue': 6,
+    'dawn': 7,
+    'dark': 8,
+    'turning': 9,
+    'continue': 10
+  };
+
+  if (direction === 0) {
+    openTab(undefined, 'home');
+  } 
+  else {
+    const currentIndex = window.pageIndex;
+    const nextIndex = currentIndex + direction;
+    const nextTabName = Object.keys(pageIndices).find(key => pageIndices[key] === nextIndex);
+    console.log(window.pageIndex)
+
+    if (nextTabName) {
+      openTab(evt, nextTabName);
+    }
+  }
+}
+
+

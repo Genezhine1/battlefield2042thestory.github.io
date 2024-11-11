@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./src/resources/Event_Data_Drive.ico" type="image/x-icon">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./src/style.css">
@@ -52,6 +53,7 @@
 
         <script> 
             $(function() {
+                window.pageIndex = 0;
                 $("#home").load("./src/pages/home.html"); 
                 $("#prologue").load("./src/pages/prologue.html"); 
                 $("#zero").load("./src/pages/zero.html"); 
@@ -82,13 +84,13 @@
 
         <div class="footer">
 
-            <button class="footer_button text" id="Previous" onclick="openTab(event,)">
+            <button class="footer_button text" id="Previous" onclick="navigate(event, -1)">
                 BACK
             </button>
-            <button class="footer_button text" id="Back-to-homepage" onclick="openTab(event, 'home')">
+            <button class="footer_button text" id="Back-to-homepage" onclick="navigate(event, 0)">
                 BACK TO HOMEPAGE
             </button>
-            <button class="footer_button text" id="Next" onclick="openTab(event,)">
+            <button class="footer_button text" id="Next" onclick="navigate(event, 1)">
                 NEXT
             </button>
             
