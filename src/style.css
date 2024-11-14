@@ -104,12 +104,14 @@ body {
     background-color: #000000;
     box-shadow: 12px 12px 15px 6px #000000;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.1rem;
     padding: 10px 15px;
     border-radius: 10px;
     border: 3px solid;
     width: max-content;
-    max-width: 28vw;
+    max-width: 40vw;
+    min-width: 30vw;
     cursor: pointer;
     white-space: pre-wrap;
     z-index: 1000;
@@ -123,20 +125,19 @@ body {
 .text {
     font-size: 1rem;
     letter-spacing: 1px;
-    word-spacing: 1px;
+    line-height: 1.5rem;
     font-family: 'TTH';
     transition-duration: 0.4s;
     color: aliceblue;
 }
 
 .content {
-    width: clamp(70vw, calc(60vw + 144px), 90vw);
+    width: clamp(35vw, calc(40vw + 144px), 90vw);
     margin: 0 auto;
 }
 
 .tabcontent {
     display: none;
-    
 }
 
 .header {
@@ -156,6 +157,12 @@ body {
     z-index: 1000;
 }
 
+.header.scrolled {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 15px;
+    background-color: #333333;
+}
+
 .header_button {
     
     display: inline-block;
@@ -164,9 +171,9 @@ body {
     box-shadow: 0 0 0 4px #ffffff28;
     background: #f700ff00;
     border: 5px solid #00000000;
-    font-size: 1rem;
+    font-size: 1.3rem;
     letter-spacing: 0;
-    padding: 5px 5px;
+    padding: 10px 10px;
     text-align: center;
     transition-duration: 0.5s;
     cursor: pointer;
@@ -200,9 +207,9 @@ body {
     box-shadow: 0 0 0 4px #ffffff28;
     background: #f700ff00;
     border: 5px solid #00000000;
-    font-size: 1rem;
+    font-size: 1.2rem;
     letter-spacing: 0;
-    padding: 2px 5px;
+    padding: 5px 5px;
     text-align: center;
     transition-duration: 0.5s;
     cursor: pointer;
@@ -281,54 +288,66 @@ body {
 #welcome-to-summary {
     color: #24fcdc;
     font-family: 'BFMS';
+    line-height: 2.5rem;
 }
 
 #the-prologue {
     color: #24fcdc;
     font-family: 'BFMS';
+    line-height: 2.5rem;
 }
 
 #season-1-zero-hour {
     color: #FFF500;
     font-family: 'BFMS';
+    line-height: 2.5rem;
 }
 
 #season-2-master-of-arms {
     color: #E61400;
     font-family: 'BFMS';
+    line-height: 2.5rem;
 }
 
 #season-3-escalation {
     color: #00E6FF;
     font-family: 'BFMS';
+    line-height: 2.5rem;
+    line-height: 2.5rem;
 }
 
 #season-4-eleventh-hour {
     color: #6DFF8F;
     font-family: 'BFMS';
+    line-height: 2.5rem;
 }
 
 #year-1-the-epilogue {
     color: #24fcdc;
     font-family: 'BFMS';
+    line-height: 2.5rem;
 }
 
 #season-5-new-dawn {
     color: #FF6432;
     font-family: 'BFMS';
+    line-height: 2.5rem;
 }
 
 #season-6-dark-creations {
     color: #647dff;
     font-family: 'BFMS';
+    line-height: 2.5rem;
 }
 
 #season-7-turning-point {
     color: #f0b469;
     font-family: 'BFMS';
+    line-height: 2.5rem;
 }
 
 #year-2-the-battle-continues {
     color: #daee1e;
     font-family: 'BFMS';
+    line-height: 2.5rem;
 }

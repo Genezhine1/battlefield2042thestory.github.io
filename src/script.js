@@ -25,10 +25,10 @@ function openTab(evt = undefined, tabName) {
       'escalation': 'https://media.contentapi.ea.com/content/dam/battlefield/battlefield-2042/common/season-03/the-war-machine/bf-2042-page-bg-season-3-zain-lore-xl.jpg.adapt.1920w.jpg',
       'eleven': 'https://media.contentapi.ea.com/content/dam/battlefield/battlefield-2042/common/season-04/buried-secrets/bf-2042-page-bg-season4-blasco-lore-xl.jpg.adapt.1920w.jpg',
       'epilogue': 'https://media.contentapi.ea.com/content/dam/battlefield/battlefield-2042/common/newsletter-background-image.jpg.adapt.3000w.jpg',
-      'dawn': 'https://live.staticflickr.com/65535/54101756248_7c01cc0914_k.jpg',
-      'dark': 'https://live.staticflickr.com/65535/54101913169_5cb1016dc0_k.jpg',
-      'turning': 'https://live.staticflickr.com/65535/54102115990_a3b22f3e6f_k.jpg',
-      'continue': 'https://live.staticflickr.com/65535/54102120900_6e52e2ed86_k.jpg',
+      'dawn': './src/resources/season5newdawnbg.jpg',
+      'dark': './src/resources/season6darkcreationsbg.jpg',
+      'turning': './src/resources/season7turningpointbg.jpg',
+      'continue': './src/resources/year2battlecontinuesbg.jpg',
   };
 
   const pagesIndices = {
@@ -83,5 +83,3 @@ function navigate(evt, direction) {
     }
   }
 }
-
-
