@@ -150,9 +150,8 @@ a:link {
 
 .text {
     font-size: 1.1rem;
-    letter-spacing: 1px;
     line-height: 1.5rem;
-    font-family: verdana;
+    font-family: verdana, sans-serif;
     transition-duration: 0.4s;
     color: aliceblue;
 }
