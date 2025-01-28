@@ -122,6 +122,32 @@ body {
     display: block; /* Show the tooltip on hover */
 }
 
+
+a:link {
+    color: #FC2C0C;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: #db6654;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #24FCDC;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+
 .text {
     font-size: 1rem;
     letter-spacing: 1px;
