@@ -12,6 +12,11 @@ function openTab(evt = undefined, tabName) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
 
+  tablinks = document.getElementsByClassName("extra_button");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
   document.getElementById(tabName).style.display = "block";
   if (tabName !== 'home') {
     document.getElementById(tabName.charAt(0).toUpperCase() + tabName.slice(1)).className += " active";
@@ -29,6 +34,8 @@ function openTab(evt = undefined, tabName) {
       'dark': './src/resources/season6darkcreationsbg.jpg',
       'turning': './src/resources/season7turningpointbg.jpg',
       'continue': './src/resources/year2battlecontinuesbg.jpg',
+      'forever': './src/resources/theforeverwarbg.jpg',
+      'expanded': './src/resources/expandeduniversebg.jpg'
   };
 
   const pagesIndices = {
@@ -42,7 +49,8 @@ function openTab(evt = undefined, tabName) {
     'dawn': 7,
     'dark': 8,
     'turning': 9,
-    'continue': 10
+    'continue': 10,
+    'forever': 11
   }
 
   window.pageIndex = pagesIndices[tabName];
@@ -66,7 +74,8 @@ function navigate(evt, direction) {
     'dawn': 7,
     'dark': 8,
     'turning': 9,
-    'continue': 10
+    'continue': 10,
+    'forever': 11
   };
 
   if (direction === 0) {

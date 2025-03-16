@@ -14,6 +14,14 @@
   <body>
     <div class="page">
 
+        <div class="extra_header">
+            
+            <button class="extra_button text" id="Expanded" onclick="openTab(event, 'expanded'), window.scroll(0, 0)">
+                EXPANDED UNIVERSE
+            </button>
+
+        </div>
+
         <div class="header">
 
             <button class="header_button text" id="Prologue" onclick="openTab(event, 'prologue'), window.scroll(0, 0)">
@@ -46,6 +54,9 @@
             <button class="header_button text" id="Continue" onclick="openTab(event, 'continue'), window.scroll(0, 0)">
                 YEAR 2: THE BATTLE CONTINUES
             </button>
+            <button class="header_button text" id="Forever" onclick="openTab(event, 'forever'), window.scroll(0, 0)">
+                THE FOREVER WAR
+            </button>
 
         </div>
 
@@ -63,6 +74,8 @@
                 $("#dark").load("./src/pages/dark.html");
                 $("#turning").load("./src/pages/turning.html");
                 $("#continue").load("./src/pages/continue.html");
+                $("#forever").load("./src/pages/forever.html");
+                $("#expanded").load("./src/pages/expanded.html");
             });
         </script>
 
@@ -78,6 +91,8 @@
             <div id="dark" class="tabcontent text"></div>
             <div id="turning" class="tabcontent text"></div>
             <div id="continue" class="tabcontent text"></div>
+            <div id="forever" class="tabcontent text"></div>
+            <div id="expanded" class="tabcontent text"></div>
         </div>
 
         <div class="footer">

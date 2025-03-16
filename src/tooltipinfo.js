@@ -228,4 +228,7 @@ var tooltips = {
     'continue_sigops': 'SIG-OPs (Special Insertion Group Operations), operating under the Mandate of Nations’ Unconventional Warfare Division, is a special forces infiltration group responsible for reconnaissance, disruption, and search and destroy. They’re the first in the fray when it comes to complex AOs, positioned to throw the enemy off-balance and giving their allies the utmost advantage as the rest of the armed forces charge in from behind.\n\n...',
 
     'continue_circleofhell': 'The Circle of Hell was a decisive battle that saw a legion of mysterious soldiers rescue Allied troops in Bastogne, Belgium in 1944.\n\nAt the Battle of the Bulge in Bastogne during World War II, American troops received word that an assault on their position was imminent and that they were to hold the line. In their care was classified cargo and they were to assist a special unit that would be joining them in their defense.\n\n...',
+
+
+    'forever_aaas': 'More information coming soon.',
   }
